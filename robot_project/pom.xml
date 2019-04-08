@@ -28,7 +28,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.hi-fi</groupId>
-			<artifactId>robotframework-seleniumibrary</artifactId>
+			<artifactId>robotframework-seleniumlibrary</artifactId>
 			<version>3.9.1.0</version>
 			<scope>test</scope>
 		</dependency>
