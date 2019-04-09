@@ -5,7 +5,7 @@ Resource                                 ../Resource/CheckoutPage.robot
 
 
 Test setup                               Setup
-# Test teardown                          Teardown
+Test teardown                            Teardown
 
 
 *** Test Cases ***
