@@ -10,6 +10,7 @@ ${PATH}           C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python
 ${SiteUrl}        https://petshop.vn/
 ${LoginUrl}       ${SiteUrl}account/login/
 ${WelcomeUrl}     ${SiteUrl}account
+${LogoutUrl}      ${SiteUrl}
 ${Delay}          5s
  
 ** Test Cases **
@@ -20,13 +21,12 @@ Valid Login
     Submit Credentials
     sleep    ${Delay}
     Welcome Page Should Be Open
+    Click Logout
     [Teardown]    Close Browser
  
 ** Keywords **
 Open Browser To Login Page
-    Set Environment Variable  ${PATH}  C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\chromedriver.exe
     open browser    ${LoginUrl}    ${Browser}
-    Click link        xpath = //*[contains(text(),'Đăng nhập')]
     Maximize Browser Window
  
 Input Username
@@ -39,4 +39,8 @@ Input Password
     Click Button    id=send2
  
 Welcome Page Should Be Open
-    Element Text Should Be    xpath=//*[@class='welcome-msg']     ${WelcomeUrl} 
+    Location Should Be    ${WelcomeUrl} 
+    Title Should Be        Trang khách hàng
+Click Logout
+    Click Element         xpath=//a[@class="login_acc"]/span[@class="hidden-xs"]   
+    Click Element         xpath=//a[@id="customer_logout_link"]    
