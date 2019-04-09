@@ -1,3 +1,4 @@
+
 *** Settings ***
 Resource                                 ../Resource/Setup.robot
 Resource                                 ../Page_Object/ProductPage.robot
@@ -26,4 +27,5 @@ Test setup                               Setup
                                          Checkout
                                          
                                          Check checkout successfully   
+
 
