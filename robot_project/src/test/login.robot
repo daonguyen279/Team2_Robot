@@ -1,16 +1,12 @@
 ** Settings **
 Library           Selenium2Library
 Library           OperatingSystem
- 
+Resource          ../Resource/Setup.robot 
 ** Variables **
 ${username}       dong.nguyen26it@gmail.com
 ${ErrPassword}    t0ikh0elamluona
-${Browser}        Chrome
-${PATH}           C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\chromedriver.exe
-${SiteUrl}        https://petshop.vn/
-${LoginUrl}       ${SiteUrl}account/login/
-${WelcomeUrl}     ${SiteUrl}account
-${LogoutUrl}      ${SiteUrl}
+${LoginUrl}       ${ROOT}account/login/
+${WelcomeUrl}     ${ROOT}account
 ${Delay}          5s
  
 ** Test Cases **
