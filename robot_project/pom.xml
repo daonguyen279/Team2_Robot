@@ -26,12 +26,12 @@
 			<artifactId>robotframework</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-	<dependency>
-	  <groupId>com.github.hi-fi</groupId>
-	  <artifactId>robotframework-seleniumlibrary</artifactId>
-	  <version>3.9.1.0</version>
-	  <scope>test</scope>
-	</dependency>
+		<dependency>
+			<groupId>com.github.hi-fi</groupId>
+			<artifactId>robotframework-seleniumlibrary</artifactId>
+			<version>3.9.1.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
