@@ -17,5 +17,4 @@ Setup
     Open browser                      ${ROOT}           ${BROWSER}
 
 Teardown
-
     Close all browsers
