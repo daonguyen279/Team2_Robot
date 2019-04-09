@@ -17,6 +17,7 @@ ${Billing District Label}       Quận Ba Đình
 ${Billing Note Field}           name=note
 ${Billing Note Value}           note
 ${Checkout Button Value}        ĐẶT HÀNG
+${Progress Bar}                 id=nprogress
 *** Keywords ***
 Fill out billing information
                                 Input Text                                                                    ${Billing Email Field}                                                                              ${Billing Email Value}
@@ -24,7 +25,9 @@ Fill out billing information
                                 Input Text                                                                    ${Billing Phone Field}                                                                              ${Billing Phone Value}
                                 Input Text                                                                    ${Billing Address Field}                                                                            ${Billing Address Value}
                                 Select From List By Label                                                     ${Billing City Field}                                                                               ${Billing City Label}
-                                # Select From List By Label                                                     ${Billing District Field}                                                                           ${Billing District Label}
+                                Wait Until Page Contains Element                                              ${Progress Bar}
+                                Wait Until Page Does Not Contain Element                                      ${Progress Bar}
+                                Select From List By Label                                                     ${Billing District Field}                                                                           ${Billing District Label}
                                 Input Text                                                                    ${Billing Note Field}                                                                               ${Billing Note Value}
 Checkout
                                 Click Button                                                                  ${Checkout Button Value}
