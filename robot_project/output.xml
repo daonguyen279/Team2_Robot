@@ -1,91 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190408 14:15:03.324" rpa="false">
-<suite id="s1" name="Robot Project" source="C:\Team2_Robot\robot_project">
-<suite id="s1-s1" name="Src" source="C:\Team2_Robot\robot_project\src">
-<suite id="s1-s1-s1" name="Test" source="C:\Team2_Robot\robot_project\src\test">
-<suite id="s1-s1-s1-s1" name="Booking" source="C:\Team2_Robot\robot_project\src\test\booking.robot">
-<test id="s1-s1-s1-s1-t1" name="TC_001 Browser Start and Close">
-<kw name="Set Environment Variable" library="OperatingSystem">
-<doc>Sets an environment variable to a specified value.</doc>
-<arguments>
-<arg>${PATH}</arg>
-<arg>C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe</arg>
-</arguments>
-<msg timestamp="20190408 14:15:03.558" level="INFO">Environment variable 'C:UsersInternDN19.01.03AppDataLocalProgramsPythonPython37chromedriver.exe' set to value 'C:UsersInternDN19.01.03AppDataLocalProgramsPythonPython37chromedriver.exe'.</msg>
-<status status="PASS" starttime="20190408 14:15:03.558" endtime="20190408 14:15:03.559"></status>
-</kw>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190409 13:12:29.511" rpa="false">
+<suite id="s1" name="Robot Project" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project">
+<suite id="s1-s1" name="Src" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project\src">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project\src\test">
+<suite id="s1-s1-s1-s1" name="Register" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project\src\test\register.robot">
+<test id="s1-s1-s1-s1-t1" name="Register successfully">
+<kw name="Open PetshopPage">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${URL}</arg>
+<arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20190408 14:15:03.559" level="INFO">Opening browser 'Chrome' to base url 'https://petshop.vn/'.</msg>
-<status status="PASS" starttime="20190408 14:15:03.559" endtime="20190408 14:15:12.925"></status>
+<msg timestamp="20190409 13:12:29.718" level="INFO">Opening browser 'Chrome' to base url 'https://webvihoang0706.000webhostapp.com/sehama-website/'.</msg>
+<status status="PASS" starttime="20190409 13:12:29.718" endtime="20190409 13:12:41.611"></status>
 </kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="page"]/header/div/div/div/div[@class="col-lg-6 col-md-6 col-sm-7 col-xs-12"]/div[@class="toplinks"]/div/div/a</arg>
-</arguments>
-<msg timestamp="20190408 14:15:12.926" level="INFO">Clicking link 'xpath=//*[@id="page"]/header/div/div/div/div[@class="col-lg-6 col-md-6 col-sm-7 col-xs-12"]/div[@class="toplinks"]/div/div/a'.</msg>
-<status status="PASS" starttime="20190408 14:15:12.925" endtime="20190408 14:15:14.360"></status>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190409 13:12:41.612" endtime="20190409 13:12:42.734"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id=email</arg>
-<arg>demo</arg>
-</arguments>
-<msg timestamp="20190408 14:15:14.361" level="INFO">Typing text 'demo' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20190408 14:15:14.361" endtime="20190408 14:15:14.745"></status>
+<status status="PASS" starttime="20190409 13:12:29.718" endtime="20190409 13:12:42.734"></status>
 </kw>
-<kw name="Input Password" library="Selenium2Library">
-<doc>Types the given password into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id=pass</arg>
-<arg>abc123</arg>
-</arguments>
-<msg timestamp="20190408 14:15:14.747" level="INFO">Typing password into text field 'id=pass'.</msg>
-<status status="PASS" starttime="20190408 14:15:14.746" endtime="20190408 14:15:14.871"></status>
+<kw name="Go to Account page">
+<msg timestamp="20190409 13:12:42.739" level="FAIL">No keyword with name 'Go to Account page' found.</msg>
+<status status="FAIL" starttime="20190409 13:12:42.738" endtime="20190409 13:12:42.739"></status>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>id=send2</arg>
-</arguments>
-<msg timestamp="20190408 14:15:14.871" level="INFO">Clicking button 'id=send2'.</msg>
-<status status="PASS" starttime="20190408 14:15:14.871" endtime="20190408 14:15:15.255"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190408 14:15:15.256" endtime="20190408 14:15:17.608"></status>
-</kw>
-<status status="PASS" starttime="20190408 14:15:03.557" endtime="20190408 14:15:17.609" critical="yes"></status>
+<status status="FAIL" starttime="20190409 13:12:29.717" endtime="20190409 13:12:42.741" critical="yes">No keyword with name 'Go to Account page' found.</status>
 </test>
-<doc>Login Test Case.</doc>
-<status status="PASS" starttime="20190408 14:15:03.386" endtime="20190408 14:15:17.610"></status>
+<status status="FAIL" starttime="20190409 13:12:29.561" endtime="20190409 13:12:42.743"></status>
 </suite>
-<status status="PASS" starttime="20190408 14:15:03.382" endtime="20190408 14:15:17.614"></status>
+<status status="FAIL" starttime="20190409 13:12:29.560" endtime="20190409 13:12:42.744"></status>
 </suite>
-<status status="PASS" starttime="20190408 14:15:03.380" endtime="20190408 14:15:17.616"></status>
+<status status="FAIL" starttime="20190409 13:12:29.558" endtime="20190409 13:12:42.745"></status>
 </suite>
-<status status="PASS" starttime="20190408 14:15:03.358" endtime="20190408 14:15:17.619"></status>
+<status status="FAIL" starttime="20190409 13:12:29.539" endtime="20190409 13:12:42.746"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Robot Project">Robot Project</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Src">Robot Project.Src</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="Test">Robot Project.Src.Test</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Booking">Robot Project.Src.Test.Booking</stat>
+<stat pass="0" fail="1" id="s1" name="Robot Project">Robot Project</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Src">Robot Project.Src</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Test">Robot Project.Src.Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1" name="Register">Robot Project.Src.Test.Register</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20190409 13:12:29.715" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project\src\test\register.robot': Resource file '..\Recourse\setup' does not exist.</msg>
+<msg timestamp="20190409 13:12:29.716" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\Team2_Robot\robot_project\src\test\register.robot': Setting variable '${WelcomeText}' failed: Variable '${Lastname}' not found.</msg>
 </errors>
 </robot>

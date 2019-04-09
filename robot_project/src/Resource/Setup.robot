@@ -1,7 +1,7 @@
 *** Variables ***
  ${BROWSER}                 Chrome
  ${ROOT}                    https://petshop.vn/
- ${PATH}                    C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe
+ ${PATH}                    ~\AppData\Local\Programs\Python\Python37\chromedriver.exe
 
 
 *** Settings ***
