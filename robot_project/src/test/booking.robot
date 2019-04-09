@@ -24,4 +24,6 @@ Test setup                               Setup
                                          Fill out billing information
 
                                          Checkout
+                                         
+                                         Check checkout successfully   
 
