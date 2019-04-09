@@ -8,7 +8,7 @@ ${Billing Email Value}          abc@domain.com
 ${Billing Name Field}           name=BillingAddress.LastName
 ${Billing Name Value}           dao
 ${Billing Phone Field}          name=BillingAddress.Phone
-${Billing Phone Value}          123456789
+${Billing Phone Value}          0977755566
 ${Billing Address Field}        name=BillingAddress.Address1
 ${Billing Address Value}        address
 ${Billing City Field}           xpath=//*[@id="select2-billingProvince-results"]
