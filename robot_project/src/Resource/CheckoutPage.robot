@@ -24,6 +24,7 @@ Fill out billing information
                                 Input Text                                                                    ${Billing Phone Field}                                                                              ${Billing Phone Value}
                                 Input Text                                                                    ${Billing Address Field}                                                                            ${Billing Address Value}
                                 Select From List By Label                                                     ${Billing City Field}                                                                               ${Billing City Label}
+                                # Wait Until Element Is Visible                                                ${Billing District Field}
                                 # Select From List By Label                                                     ${Billing District Field}                                                                           ${Billing District Label}
                                 Input Text                                                                    ${Billing Note Field}                                                                               ${Billing Note Value}
 Checkout
