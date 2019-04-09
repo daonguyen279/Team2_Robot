@@ -3,7 +3,7 @@ Library           Selenium2Library
 Library           OperatingSystem
  
 ** Variables **
-${Username}       dong.nguyen26it@gmail.com
+${username}       dong.nguyen26it@gmail.com
 ${ErrPassword}    t0ikh0elamluona
 ${Browser}        Chrome
 ${PATH}           C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\chromedriver.exe
@@ -30,7 +30,7 @@ Open Browser To Login Page
     Maximize Browser Window
  
 Input Username
-    Input Text    id=email    ${Username}
+    Input Text    id=email    ${username}
  
 Input Password
     Input Text    id=pass    ${ErrPassword}
