@@ -1,4 +1,3 @@
-*** Settings ***
 Resource                        ../Resource/Setup.robot
 
 *** Variables ***
@@ -11,51 +10,28 @@ ${Billing Phone Field}          name=BillingAddress.Phone
 ${Billing Phone Value}          0977755566
 ${Billing Address Field}        name=BillingAddress.Address1
 ${Billing Address Value}        address
-<<<<<<< HEAD
 ${Billing City Field}           xpath=//*[@id="select2-billingProvince-results"]
-${billingcity_value}            id= select2-billingProvince-result-g4dq-3
+${billingcity_value}            Hà Nội
 ${billingdistrict field}        xpath=//*[@id="select2-billingDistrict-results"]
-${billingdictrict_value}        id=select2-billingDistrict-result-qxpm-57
+${billingdictrict_value}        Quận Ba Đình
 ${billingnote_textfield}        xpath=/html/body/form/div/div[2]/div[2]/div/div[1]/div[4]/div/div/textarea
-${Checkout Button}              xpath=//*[@class="btn btn-primary btn-checkout"]
-
+${billingnote_value}            test
+${Checkout Button}              //div[2]/div[2]/div/div[2]/div[3]/div[1]/input
 *** Keywords ***
 Fill out billing information
-                                Input Text                                                                    ${Billing Email Field}                  ${Billing Email Value}
-                                Input Text                                                                    ${Billing Name Field}                   ${Billing Name Value}
-                                Input Text                                                                    ${Billing Phone Field}                  ${Billing Phone Value}
-                                Input Text                                                                    ${Billing Address Field}                ${Billing Address Value}
-                                Click Element                                                                 id=select2-billingProvince-container
-                                Select From List by Value                                                     ${Billing City Field}                   ${billingcity_value}
-                                Click Element                                                                 id=select2-billingDistrict-container
-                                Select From List by Value                                                     ${billingdistrict field}                ${billingdictrict_value}
-                                Input Text                                                                    ${billingnote_textfield} test
+                                Input Text                                                                    ${Billing Email Field}                                                                              ${Billing Email Value}
+                                Input Text                                                                    ${Billing Name Field}                                                                               ${Billing Name Value}
+                                Input Text                                                                    ${Billing Phone Field}                                                                              ${Billing Phone Value}
+                                Input Text                                                                    ${Billing Address Field}                                                                            ${Billing Address Value}
+                                Click Element                                                                 xpath=//div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div/div[4]/div[1]/span/span[1]/span
+                                Click Element                                                                 xpath=//*[@id="select2-billingProvince-results"]/li[contains(text(),"${billingcity_value}")]
+                                # Select From List By Value                                                   ${Billing City Field}                                                                               ${billingcity_value}
 
+                                Click Element                                                                 xpath=//div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div/div[5]/div[1]/span/span[1]/span
+                                Input Text                                                                    xpath=//div[2]/div[2]/span/span/span[1]/input                                                       ${billingdictrict_value}
+                                Click Element                                                                 xpath=//*[@id="select2-billingDistrict-results"]/li[contains(text(),"${billingdictrict_value}")]
+                                # Select From List By Value                                                   ${billingdistrict field}                                                                            ${billingdictrict_value}
+                                Input Text                                                                    ${billingnote_textfield}                                                                            ${billingnote_value}
 Checkout
-                                Click link                                                                    ${Checkout Button}
-                                Wait Until Page Contains                                                      Cảm ơn bạn đã đặt hàng
-                                Location Should Contain                                                       ${ROOT}checkout/thankyou/
-=======
-${Billing City Field}           name=BillingProvinceId
-${Billing City Value}           1
-${billingadress_textfield}      name=BillingDistrictId
-${billingadress_value}          1
-${Billing Note Field}           name=note
-${Billing Note Value}           note
-${Checkout Button Value}        ĐẶT HÀNG
-
-*** Keywords ***
-Fill out billing information
-                                Input Text                      ${Billing Email Field}        ${Billing Email Value}
-                                Input Text                      ${Billing Name Field}         ${Billing Name Value}
-                                Input Text                      ${Billing Phone Field}        ${Billing Phone Value}
-                                Input Text                      ${Billing Address Field}      ${Billing Address Value}
-                                Select From List by Value       ${Billing City Field}         ${Billing City Value}
-                                # Select From List by Value       ${billingadress_textfield}    ${billingadress_value}
-                                Input Text                      ${Billing Note Field}         ${Billing Note Value}
-Checkout
-                                Click Button                    ${Checkout Button Value}
-                                Wait Until Page Contains        Cảm ơn bạn đã đặt hàng
-                                Location Should Contain         ${ROOT}checkout/thankyou/
->>>>>>> ffa80565e06aac9d046a3dcb10289e116a58d224
+                                Click Button                                                                  ${Checkout Button}
 
