@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190409 14:14:54.093" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190409 14:18:46.413" rpa="false">
 <suite id="s1" name="Robot Project" source="C:\Team2_Robot\robot_project">
 <suite id="s1-s1" name="Src" source="C:\Team2_Robot\robot_project\src">
 <suite id="s1-s1-s1" name="Test" source="C:\Team2_Robot\robot_project\src\test">
@@ -14,15 +14,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190409 14:14:54.275" level="INFO">${PATH} = C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe</msg>
-<status status="PASS" starttime="20190409 14:14:54.274" endtime="20190409 14:14:54.275"></status>
+<msg timestamp="20190409 14:18:46.594" level="INFO">${PATH} = C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe</msg>
+<status status="PASS" starttime="20190409 14:18:46.594" endtime="20190409 14:18:46.595"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190409 14:14:54.275" endtime="20190409 14:14:54.275"></status>
+<status status="PASS" starttime="20190409 14:18:46.595" endtime="20190409 14:18:46.595"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +30,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190409 14:14:54.276" level="INFO">Environment variable 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe' set to value 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe'.</msg>
-<status status="PASS" starttime="20190409 14:14:54.275" endtime="20190409 14:14:54.276"></status>
+<msg timestamp="20190409 14:18:46.596" level="INFO">Environment variable 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe' set to value 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe'.</msg>
+<status status="PASS" starttime="20190409 14:18:46.595" endtime="20190409 14:18:46.596"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,41 +39,284 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190409 14:14:54.276" level="INFO">Opening browser 'Chrome' to base url 'https://petshop.vn/'.</msg>
-<status status="PASS" starttime="20190409 14:14:54.276" endtime="20190409 14:15:09.558"></status>
+<msg timestamp="20190409 14:18:46.596" level="INFO">Opening browser 'Chrome' to base url 'https://petshop.vn/'.</msg>
+<status status="PASS" starttime="20190409 14:18:46.596" endtime="20190409 14:18:57.297"></status>
 </kw>
-<status status="PASS" starttime="20190409 14:14:54.274" endtime="20190409 14:15:09.559"></status>
+<status status="PASS" starttime="20190409 14:18:46.593" endtime="20190409 14:18:57.298"></status>
 </kw>
-<kw name="Go to Product page">
-<msg timestamp="20190409 14:15:09.563" level="FAIL">No keyword with name 'Go to Product page' found.</msg>
-<status status="FAIL" starttime="20190409 14:15:09.563" endtime="20190409 14:15:09.564"></status>
+<kw name="Go to Product page" library="ProductPage">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Go to Product page</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:18:57.299" endtime="20190409 14:18:57.299"></status>
 </kw>
-<status status="FAIL" starttime="20190409 14:14:54.273" endtime="20190409 14:15:09.564" critical="yes">No keyword with name 'Go to Product page' found.</status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav"]/li[2]/a/span</arg>
+</arguments>
+<msg timestamp="20190409 14:18:57.300" level="INFO">Clicking element 'xpath=//*[@id="nav"]/li[2]/a/span'.</msg>
+<status status="PASS" starttime="20190409 14:18:57.299" endtime="20190409 14:19:00.585"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:18:57.298" endtime="20190409 14:19:00.586"></status>
+</kw>
+<kw name="Choose Product" library="ProductPage">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Choose Product</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:00.587" endtime="20190409 14:19:00.587"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="page"]/section/div/div/section/div[2]/ul/li[2]/div/div[1]/div[1]/a/figure/img[2]</arg>
+</arguments>
+<msg timestamp="20190409 14:19:00.588" level="INFO">Clicking element 'xpath=//*[@id="page"]/section/div/div/section/div[2]/ul/li[2]/div/div[1]/div[1]/a/figure/img[2]'.</msg>
+<status status="PASS" starttime="20190409 14:19:00.587" endtime="20190409 14:19:31.200"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:00.586" endtime="20190409 14:19:31.200"></status>
+</kw>
+<kw name="Add Product To Cart" library="ProductPage">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Add Product To Cart</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:31.202" endtime="20190409 14:19:31.203"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="add-to-cart-form"]/div[3]/div[4]/div[2]/button/span</arg>
+</arguments>
+<msg timestamp="20190409 14:19:31.203" level="INFO">Clicking element 'xpath=//*[@id="add-to-cart-form"]/div[3]/div[4]/div[2]/button/span'.</msg>
+<status status="PASS" starttime="20190409 14:19:31.203" endtime="20190409 14:19:31.531"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class="jGrowl-message"]</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:31.532" endtime="20190409 14:19:31.799"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class="jGrowl-close"]</arg>
+</arguments>
+<msg timestamp="20190409 14:19:31.799" level="INFO">Clicking element 'xpath=//*[@class="jGrowl-close"]'.</msg>
+<status status="PASS" starttime="20190409 14:19:31.799" endtime="20190409 14:19:31.859"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:31.201" endtime="20190409 14:19:31.860"></status>
+</kw>
+<kw name="View Cart" library="ProductPage">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Proceed To Check Out</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:31.860" endtime="20190409 14:19:31.860"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>id=cart-total</arg>
+</arguments>
+<msg timestamp="20190409 14:19:31.861" level="INFO">Simulating Mouse Over on element 'id=cart-total'.</msg>
+<status status="PASS" starttime="20190409 14:19:31.861" endtime="20190409 14:19:31.892"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@class=" view-cart"]</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:31.893" endtime="20190409 14:19:33.048"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class=" view-cart"]</arg>
+</arguments>
+<msg timestamp="20190409 14:19:33.048" level="INFO">Clicking element 'xpath=//*[@class=" view-cart"]'.</msg>
+<status status="PASS" starttime="20190409 14:19:33.048" endtime="20190409 14:19:34.371"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class="button btn-proceed-checkout"]</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:34.372" endtime="20190409 14:19:34.396"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${ROOT}cart</arg>
+</arguments>
+<msg timestamp="20190409 14:19:34.405" level="INFO">Current location is 'https://petshop.vn/cart'.</msg>
+<status status="PASS" starttime="20190409 14:19:34.396" endtime="20190409 14:19:34.406"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:31.860" endtime="20190409 14:19:34.406"></status>
+</kw>
+<kw name="Proceed To Check Out" library="ProductPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@class="button btn-proceed-checkout"]</arg>
+</arguments>
+<msg timestamp="20190409 14:19:34.408" level="INFO">Clicking element 'xpath=//*[@class="button btn-proceed-checkout"]'.</msg>
+<status status="PASS" starttime="20190409 14:19:34.407" endtime="20190409 14:19:36.125"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@class="btn btn-primary btn-checkout"]</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:36.126" endtime="20190409 14:19:36.138"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${ROOT}checkout</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.143" level="INFO">Current location contains 'https://petshop.vn/checkout'.</msg>
+<status status="PASS" starttime="20190409 14:19:36.138" endtime="20190409 14:19:36.143"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:34.407" endtime="20190409 14:19:36.143"></status>
+</kw>
+<kw name="Fill out billing information" library="CheckoutPage">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Billing Email Field}</arg>
+<arg>${Billing Email Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.144" level="INFO">Typing text 'abc@domain.com' into text field 'name=Email'.</msg>
+<status status="PASS" starttime="20190409 14:19:36.144" endtime="20190409 14:19:36.299"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Billing Name Field}</arg>
+<arg>${Billing Name Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.300" level="INFO">Typing text 'dao' into text field 'name=BillingAddress.LastName'.</msg>
+<status status="PASS" starttime="20190409 14:19:36.299" endtime="20190409 14:19:36.376"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Billing Phone Field}</arg>
+<arg>${Billing Phone Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.377" level="INFO">Typing text '0977755566' into text field 'name=BillingAddress.Phone'.</msg>
+<status status="PASS" starttime="20190409 14:19:36.376" endtime="20190409 14:19:36.497"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Billing Address Field}</arg>
+<arg>${Billing Address Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.498" level="INFO">Typing text 'address' into text field 'name=BillingAddress.Address1'.</msg>
+<status status="PASS" starttime="20190409 14:19:36.498" endtime="20190409 14:19:36.604"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Billing City Field}</arg>
+<arg>${Billing City Label}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:36.605" level="INFO">Selecting options from selection list 'name=BillingProvinceId' by label Hà Nội.</msg>
+<status status="PASS" starttime="20190409 14:19:36.605" endtime="20190409 14:19:36.686"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Progress Bar}</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:36.687" endtime="20190409 14:19:36.698"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Progress Bar}</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:36.698" endtime="20190409 14:19:37.331"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Billing District Field}</arg>
+<arg>${Billing District Label}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:37.332" level="INFO">Selecting options from selection list 'name=BillingDistrictId' by label Quận Ba Đình.</msg>
+<status status="PASS" starttime="20190409 14:19:37.331" endtime="20190409 14:19:37.403"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Billing Note Field}</arg>
+<arg>${Billing Note Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:37.404" level="INFO">Typing text 'note' into text field 'name=note'.</msg>
+<status status="PASS" starttime="20190409 14:19:37.403" endtime="20190409 14:19:37.480"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:36.143" endtime="20190409 14:19:37.480"></status>
+</kw>
+<kw name="Checkout" library="CheckoutPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Checkout Button Value}</arg>
+</arguments>
+<msg timestamp="20190409 14:19:37.481" level="INFO">Clicking button 'ĐẶT HÀNG'.</msg>
+<status status="PASS" starttime="20190409 14:19:37.481" endtime="20190409 14:19:37.541"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Cảm ơn bạn đã đặt hàng</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:19:37.542" endtime="20190409 14:19:40.269"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${ROOT}checkout/thankyou/</arg>
+</arguments>
+<msg timestamp="20190409 14:19:40.275" level="INFO">Current location contains 'https://petshop.vn/checkout/thankyou/'.</msg>
+<status status="PASS" starttime="20190409 14:19:40.270" endtime="20190409 14:19:40.275"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:19:37.480" endtime="20190409 14:19:40.276"></status>
+</kw>
+<status status="PASS" starttime="20190409 14:18:46.593" endtime="20190409 14:19:40.276" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20190409 14:14:54.141" endtime="20190409 14:15:09.565"></status>
+<status status="PASS" starttime="20190409 14:18:46.461" endtime="20190409 14:19:40.277"></status>
 </suite>
-<status status="FAIL" starttime="20190409 14:14:54.139" endtime="20190409 14:15:09.566"></status>
+<status status="PASS" starttime="20190409 14:18:46.459" endtime="20190409 14:19:40.278"></status>
 </suite>
-<status status="FAIL" starttime="20190409 14:14:54.137" endtime="20190409 14:15:09.567"></status>
+<status status="PASS" starttime="20190409 14:18:46.457" endtime="20190409 14:19:40.279"></status>
 </suite>
-<status status="FAIL" starttime="20190409 14:14:54.120" endtime="20190409 14:15:09.569"></status>
+<status status="PASS" starttime="20190409 14:18:46.439" endtime="20190409 14:19:40.280"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Robot Project">Robot Project</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Src">Robot Project.Src</stat>
-<stat pass="0" fail="1" id="s1-s1-s1" name="Test">Robot Project.Src.Test</stat>
-<stat pass="0" fail="1" id="s1-s1-s1-s1" name="Booking">Robot Project.Src.Test.Booking</stat>
+<stat pass="1" fail="0" id="s1" name="Robot Project">Robot Project</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Src">Robot Project.Src</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Test">Robot Project.Src.Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Booking">Robot Project.Src.Test.Booking</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190409 14:14:54.271" level="ERROR">Error in file 'C:\Team2_Robot\robot_project\src\test\booking.robot': Resource file '..\Resource\ProductPage.robot' does not exist.</msg>
-<msg timestamp="20190409 14:14:54.272" level="ERROR">Error in file 'C:\Team2_Robot\robot_project\src\test\booking.robot': Resource file '..\Resource\CheckoutPage.robot' does not exist.</msg>
 </errors>
 </robot>

@@ -33,7 +33,3 @@ Checkout
                                 Click Button                                ${Checkout Button Value}
                                 Wait Until Page Contains                    Cảm ơn bạn đã đặt hàng
                                 Location Should Contain                     ${ROOT}checkout/thankyou/
-Check billing information
-
-${Billinfor name}               Get Text                                    xpath=//div/div[2]/div[1]/div/div[3]/div[2]/div[1]/div[1]/div/div[2]/p[1]
-                                Should Be Equal As Strings                  ${Billinfor adress}                                                          ${Billing Name Value}
