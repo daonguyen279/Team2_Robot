@@ -31,5 +31,6 @@ Fill out billing information
                                 Input Text                                  ${Billing Note Field}                                                        ${Billing Note Value}
 Checkout
                                 Click Button                                ${Checkout Button Value}
+Check checkout successfully                                
                                 Wait Until Page Contains                    Cảm ơn bạn đã đặt hàng
                                 Location Should Contain                     ${ROOT}checkout/thankyou/
