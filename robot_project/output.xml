@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190409 13:42:07.683" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190409 14:26:01.031" rpa="false">
 <suite id="s1" name="Robot Project" source="C:\Team2_Robot\robot_project">
 <suite id="s1-s1" name="Src" source="C:\Team2_Robot\robot_project\src">
 <suite id="s1-s1-s1" name="Test" source="C:\Team2_Robot\robot_project\src\test">
@@ -14,15 +14,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190409 13:42:07.867" level="INFO">${PATH} = C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe</msg>
-<status status="PASS" starttime="20190409 13:42:07.867" endtime="20190409 13:42:07.868"></status>
+<msg timestamp="20190409 14:26:01.216" level="INFO">${PATH} = C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe</msg>
+<status status="PASS" starttime="20190409 14:26:01.216" endtime="20190409 14:26:01.216"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:07.868" endtime="20190409 13:42:07.868"></status>
+<status status="PASS" starttime="20190409 14:26:01.216" endtime="20190409 14:26:01.217"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +30,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:07.869" level="INFO">Environment variable 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe' set to value 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe'.</msg>
-<status status="PASS" starttime="20190409 13:42:07.869" endtime="20190409 13:42:07.869"></status>
+<msg timestamp="20190409 14:26:01.217" level="INFO">Environment variable 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe' set to value 'C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\chromedriver.exe'.</msg>
+<status status="PASS" starttime="20190409 14:26:01.217" endtime="20190409 14:26:01.217"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,10 +39,10 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:07.870" level="INFO">Opening browser 'Chrome' to base url 'https://petshop.vn/'.</msg>
-<status status="PASS" starttime="20190409 13:42:07.869" endtime="20190409 13:42:14.238"></status>
+<msg timestamp="20190409 14:26:01.218" level="INFO">Opening browser 'Chrome' to base url 'https://petshop.vn/'.</msg>
+<status status="PASS" starttime="20190409 14:26:01.218" endtime="20190409 14:26:08.262"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:07.866" endtime="20190409 13:42:14.238"></status>
+<status status="PASS" starttime="20190409 14:26:01.215" endtime="20190409 14:26:08.262"></status>
 </kw>
 <kw name="Go to Product page" library="ProductPage">
 <kw name="Log To Console" library="BuiltIn">
@@ -50,17 +50,17 @@
 <arguments>
 <arg>Go to Product page</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:14.239" endtime="20190409 13:42:14.240"></status>
+<status status="PASS" starttime="20190409 14:26:08.263" endtime="20190409 14:26:08.264"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="nav"]/li[2]/a/span</arg>
 </arguments>
-<msg timestamp="20190409 13:42:14.242" level="INFO">Clicking element 'xpath=//*[@id="nav"]/li[2]/a/span'.</msg>
-<status status="PASS" starttime="20190409 13:42:14.241" endtime="20190409 13:42:15.833"></status>
+<msg timestamp="20190409 14:26:08.264" level="INFO">Clicking element 'xpath=//*[@id="nav"]/li[2]/a/span'.</msg>
+<status status="PASS" starttime="20190409 14:26:08.264" endtime="20190409 14:26:09.358"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:14.239" endtime="20190409 13:42:15.833"></status>
+<status status="PASS" starttime="20190409 14:26:08.263" endtime="20190409 14:26:09.359"></status>
 </kw>
 <kw name="Choose Product" library="ProductPage">
 <kw name="Log To Console" library="BuiltIn">
@@ -68,17 +68,17 @@
 <arguments>
 <arg>Choose Product</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:15.835" endtime="20190409 13:42:15.835"></status>
+<status status="PASS" starttime="20190409 14:26:09.359" endtime="20190409 14:26:09.360"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="page"]/section/div/div/section/div[2]/ul/li[2]/div/div[1]/div[1]/a/figure/img[2]</arg>
 </arguments>
-<msg timestamp="20190409 13:42:15.835" level="INFO">Clicking element 'xpath=//*[@id="page"]/section/div/div/section/div[2]/ul/li[2]/div/div[1]/div[1]/a/figure/img[2]'.</msg>
-<status status="PASS" starttime="20190409 13:42:15.835" endtime="20190409 13:42:18.760"></status>
+<msg timestamp="20190409 14:26:09.360" level="INFO">Clicking element 'xpath=//*[@id="page"]/section/div/div/section/div[2]/ul/li[2]/div/div[1]/div[1]/a/figure/img[2]'.</msg>
+<status status="PASS" starttime="20190409 14:26:09.360" endtime="20190409 14:26:10.425"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:15.835" endtime="20190409 13:42:18.761"></status>
+<status status="PASS" starttime="20190409 14:26:09.359" endtime="20190409 14:26:10.425"></status>
 </kw>
 <kw name="Add Product To Cart" library="ProductPage">
 <kw name="Log To Console" library="BuiltIn">
@@ -86,32 +86,32 @@
 <arguments>
 <arg>Add Product To Cart</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:18.762" endtime="20190409 13:42:18.763"></status>
+<status status="PASS" starttime="20190409 14:26:10.426" endtime="20190409 14:26:10.427"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="add-to-cart-form"]/div[3]/div[4]/div[2]/button/span</arg>
 </arguments>
-<msg timestamp="20190409 13:42:18.764" level="INFO">Clicking element 'xpath=//*[@id="add-to-cart-form"]/div[3]/div[4]/div[2]/button/span'.</msg>
-<status status="PASS" starttime="20190409 13:42:18.764" endtime="20190409 13:42:19.018"></status>
+<msg timestamp="20190409 14:26:10.427" level="INFO">Clicking element 'xpath=//*[@id="add-to-cart-form"]/div[3]/div[4]/div[2]/button/span'.</msg>
+<status status="PASS" starttime="20190409 14:26:10.427" endtime="20190409 14:26:10.711"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>xpath=//*[@class="jGrowl-message"]</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:19.019" endtime="20190409 13:42:19.474"></status>
+<status status="PASS" starttime="20190409 14:26:10.711" endtime="20190409 14:26:11.048"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@class="jGrowl-close"]</arg>
 </arguments>
-<msg timestamp="20190409 13:42:19.475" level="INFO">Clicking element 'xpath=//*[@class="jGrowl-close"]'.</msg>
-<status status="PASS" starttime="20190409 13:42:19.475" endtime="20190409 13:42:19.521"></status>
+<msg timestamp="20190409 14:26:11.049" level="INFO">Clicking element 'xpath=//*[@class="jGrowl-close"]'.</msg>
+<status status="PASS" starttime="20190409 14:26:11.049" endtime="20190409 14:26:11.151"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:18.761" endtime="20190409 13:42:19.521"></status>
+<status status="PASS" starttime="20190409 14:26:10.425" endtime="20190409 14:26:11.151"></status>
 </kw>
 <kw name="View Cart" library="ProductPage">
 <kw name="Log To Console" library="BuiltIn">
@@ -119,47 +119,47 @@
 <arguments>
 <arg>Proceed To Check Out</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:19.522" endtime="20190409 13:42:19.522"></status>
+<status status="PASS" starttime="20190409 14:26:11.152" endtime="20190409 14:26:11.152"></status>
 </kw>
 <kw name="Mouse Over" library="Selenium2Library">
 <doc>Simulates hovering mouse over the element ``locator``.</doc>
 <arguments>
 <arg>id=cart-total</arg>
 </arguments>
-<msg timestamp="20190409 13:42:19.523" level="INFO">Simulating Mouse Over on element 'id=cart-total'.</msg>
-<status status="PASS" starttime="20190409 13:42:19.523" endtime="20190409 13:42:19.550"></status>
+<msg timestamp="20190409 14:26:11.152" level="INFO">Simulating Mouse Over on element 'id=cart-total'.</msg>
+<status status="PASS" starttime="20190409 14:26:11.152" endtime="20190409 14:26:11.179"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath=//*[@class=" view-cart"]</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:19.550" endtime="20190409 13:42:20.551"></status>
+<status status="PASS" starttime="20190409 14:26:11.180" endtime="20190409 14:26:12.312"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@class=" view-cart"]</arg>
 </arguments>
-<msg timestamp="20190409 13:42:20.551" level="INFO">Clicking element 'xpath=//*[@class=" view-cart"]'.</msg>
-<status status="PASS" starttime="20190409 13:42:20.551" endtime="20190409 13:42:21.861"></status>
+<msg timestamp="20190409 14:26:12.313" level="INFO">Clicking element 'xpath=//*[@class=" view-cart"]'.</msg>
+<status status="PASS" starttime="20190409 14:26:12.312" endtime="20190409 14:26:13.620"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>xpath=//*[@class="button btn-proceed-checkout"]</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:21.863" endtime="20190409 13:42:21.875"></status>
+<status status="PASS" starttime="20190409 14:26:13.620" endtime="20190409 14:26:13.632"></status>
 </kw>
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly ``url``.</doc>
 <arguments>
 <arg>${ROOT}cart</arg>
 </arguments>
-<msg timestamp="20190409 13:42:21.879" level="INFO">Current location is 'https://petshop.vn/cart'.</msg>
-<status status="PASS" starttime="20190409 13:42:21.875" endtime="20190409 13:42:21.880"></status>
+<msg timestamp="20190409 14:26:13.637" level="INFO">Current location is 'https://petshop.vn/cart'.</msg>
+<status status="PASS" starttime="20190409 14:26:13.632" endtime="20190409 14:26:13.638"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:19.522" endtime="20190409 13:42:21.880"></status>
+<status status="PASS" starttime="20190409 14:26:11.151" endtime="20190409 14:26:13.638"></status>
 </kw>
 <kw name="Proceed To Check Out" library="ProductPage">
 <kw name="Click Element" library="Selenium2Library">
@@ -167,25 +167,25 @@
 <arguments>
 <arg>xpath=//*[@class="button btn-proceed-checkout"]</arg>
 </arguments>
-<msg timestamp="20190409 13:42:21.881" level="INFO">Clicking element 'xpath=//*[@class="button btn-proceed-checkout"]'.</msg>
-<status status="PASS" starttime="20190409 13:42:21.881" endtime="20190409 13:42:23.164"></status>
+<msg timestamp="20190409 14:26:13.639" level="INFO">Clicking element 'xpath=//*[@class="button btn-proceed-checkout"]'.</msg>
+<status status="PASS" starttime="20190409 14:26:13.639" endtime="20190409 14:26:14.812"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>xpath=//*[@class="btn btn-primary btn-checkout"]</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:23.165" endtime="20190409 13:42:23.176"></status>
+<status status="PASS" starttime="20190409 14:26:14.812" endtime="20190409 14:26:14.824"></status>
 </kw>
 <kw name="Location Should Contain" library="Selenium2Library">
 <doc>Verifies that current URL contains ``expected``.</doc>
 <arguments>
 <arg>${ROOT}checkout</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.182" level="INFO">Current location contains 'https://petshop.vn/checkout'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.176" endtime="20190409 13:42:23.182"></status>
+<msg timestamp="20190409 14:26:14.829" level="INFO">Current location contains 'https://petshop.vn/checkout'.</msg>
+<status status="PASS" starttime="20190409 14:26:14.825" endtime="20190409 14:26:14.829"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:21.880" endtime="20190409 13:42:23.183"></status>
+<status status="PASS" starttime="20190409 14:26:13.638" endtime="20190409 14:26:14.830"></status>
 </kw>
 <kw name="Fill out billing information" library="CheckoutPage">
 <kw name="Input Text" library="Selenium2Library">
@@ -194,8 +194,8 @@
 <arg>${Billing Email Field}</arg>
 <arg>${Billing Email Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.183" level="INFO">Typing text 'abc@domain.com' into text field 'name=Email'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.183" endtime="20190409 13:42:23.330"></status>
+<msg timestamp="20190409 14:26:14.830" level="INFO">Typing text 'abc@domain.com' into text field 'name=Email'.</msg>
+<status status="PASS" starttime="20190409 14:26:14.830" endtime="20190409 14:26:14.979"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -203,8 +203,8 @@
 <arg>${Billing Name Field}</arg>
 <arg>${Billing Name Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.331" level="INFO">Typing text 'dao' into text field 'name=BillingAddress.LastName'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.331" endtime="20190409 13:42:23.407"></status>
+<msg timestamp="20190409 14:26:14.980" level="INFO">Typing text 'dao' into text field 'name=BillingAddress.LastName'.</msg>
+<status status="PASS" starttime="20190409 14:26:14.980" endtime="20190409 14:26:15.059"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -212,8 +212,8 @@
 <arg>${Billing Phone Field}</arg>
 <arg>${Billing Phone Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.408" level="INFO">Typing text '0977755566' into text field 'name=BillingAddress.Phone'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.407" endtime="20190409 13:42:23.528"></status>
+<msg timestamp="20190409 14:26:15.060" level="INFO">Typing text '0977755566' into text field 'name=BillingAddress.Phone'.</msg>
+<status status="PASS" starttime="20190409 14:26:15.059" endtime="20190409 14:26:15.183"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -221,8 +221,8 @@
 <arg>${Billing Address Field}</arg>
 <arg>${Billing Address Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.529" level="INFO">Typing text 'address' into text field 'name=BillingAddress.Address1'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.529" endtime="20190409 13:42:23.651"></status>
+<msg timestamp="20190409 14:26:15.184" level="INFO">Typing text 'address' into text field 'name=BillingAddress.Address1'.</msg>
+<status status="PASS" starttime="20190409 14:26:15.184" endtime="20190409 14:26:15.313"></status>
 </kw>
 <kw name="Select From List By Label" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -230,8 +230,31 @@
 <arg>${Billing City Field}</arg>
 <arg>${Billing City Label}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.651" level="INFO">Selecting options from selection list 'name=BillingProvinceId' by label Hà Nội.</msg>
-<status status="PASS" starttime="20190409 13:42:23.651" endtime="20190409 13:42:23.740"></status>
+<msg timestamp="20190409 14:26:15.314" level="INFO">Selecting options from selection list 'name=BillingProvinceId' by label Hà Nội.</msg>
+<status status="PASS" starttime="20190409 14:26:15.314" endtime="20190409 14:26:15.396"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Progress Bar}</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:26:15.397" endtime="20190409 14:26:15.408"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Progress Bar}</arg>
+</arguments>
+<status status="PASS" starttime="20190409 14:26:15.409" endtime="20190409 14:26:16.044"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Billing District Field}</arg>
+<arg>${Billing District Label}</arg>
+</arguments>
+<msg timestamp="20190409 14:26:16.046" level="INFO">Selecting options from selection list 'name=BillingDistrictId' by label Quận Ba Đình.</msg>
+<status status="PASS" starttime="20190409 14:26:16.045" endtime="20190409 14:26:16.129"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -239,10 +262,10 @@
 <arg>${Billing Note Field}</arg>
 <arg>${Billing Note Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.741" level="INFO">Typing text 'note' into text field 'name=note'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.740" endtime="20190409 13:42:23.811"></status>
+<msg timestamp="20190409 14:26:16.130" level="INFO">Typing text 'note' into text field 'name=note'.</msg>
+<status status="PASS" starttime="20190409 14:26:16.130" endtime="20190409 14:26:16.201"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:23.183" endtime="20190409 13:42:23.811"></status>
+<status status="PASS" starttime="20190409 14:26:14.830" endtime="20190409 14:26:16.201"></status>
 </kw>
 <kw name="Checkout" library="CheckoutPage">
 <kw name="Click Button" library="Selenium2Library">
@@ -250,35 +273,35 @@
 <arguments>
 <arg>${Checkout Button Value}</arg>
 </arguments>
-<msg timestamp="20190409 13:42:23.812" level="INFO">Clicking button 'ĐẶT HÀNG'.</msg>
-<status status="PASS" starttime="20190409 13:42:23.811" endtime="20190409 13:42:23.871"></status>
+<msg timestamp="20190409 14:26:16.202" level="INFO">Clicking button 'ĐẶT HÀNG'.</msg>
+<status status="PASS" starttime="20190409 14:26:16.202" endtime="20190409 14:26:16.263"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Cảm ơn bạn đã đặt hàng</arg>
 </arguments>
-<status status="PASS" starttime="20190409 13:42:23.871" endtime="20190409 13:42:26.893"></status>
+<status status="PASS" starttime="20190409 14:26:16.263" endtime="20190409 14:26:18.873"></status>
 </kw>
 <kw name="Location Should Contain" library="Selenium2Library">
 <doc>Verifies that current URL contains ``expected``.</doc>
 <arguments>
 <arg>${ROOT}checkout/thankyou/</arg>
 </arguments>
-<msg timestamp="20190409 13:42:26.898" level="INFO">Current location contains 'https://petshop.vn/checkout/thankyou/'.</msg>
-<status status="PASS" starttime="20190409 13:42:26.894" endtime="20190409 13:42:26.898"></status>
+<msg timestamp="20190409 14:26:18.878" level="INFO">Current location contains 'https://petshop.vn/checkout/thankyou/'.</msg>
+<status status="PASS" starttime="20190409 14:26:18.873" endtime="20190409 14:26:18.878"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:23.811" endtime="20190409 13:42:26.898"></status>
+<status status="PASS" starttime="20190409 14:26:16.201" endtime="20190409 14:26:18.879"></status>
 </kw>
-<status status="PASS" starttime="20190409 13:42:07.866" endtime="20190409 13:42:26.899" critical="yes"></status>
+<status status="PASS" starttime="20190409 14:26:01.214" endtime="20190409 14:26:18.879" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190409 13:42:07.732" endtime="20190409 13:42:26.899"></status>
+<status status="PASS" starttime="20190409 14:26:01.079" endtime="20190409 14:26:18.880"></status>
 </suite>
-<status status="PASS" starttime="20190409 13:42:07.730" endtime="20190409 13:42:26.901"></status>
+<status status="PASS" starttime="20190409 14:26:01.077" endtime="20190409 14:26:18.881"></status>
 </suite>
-<status status="PASS" starttime="20190409 13:42:07.728" endtime="20190409 13:42:26.902"></status>
+<status status="PASS" starttime="20190409 14:26:01.075" endtime="20190409 14:26:18.883"></status>
 </suite>
-<status status="PASS" starttime="20190409 13:42:07.710" endtime="20190409 13:42:26.904"></status>
+<status status="PASS" starttime="20190409 14:26:01.058" endtime="20190409 14:26:18.884"></status>
 </suite>
 <statistics>
 <total>

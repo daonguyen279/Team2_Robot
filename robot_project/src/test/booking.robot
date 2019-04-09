@@ -1,7 +1,7 @@
 *** Settings ***
 Resource                                 ../Resource/Setup.robot
-Resource                                 ../Resource/ProductPage.robot
-Resource                                 ../Resource/CheckoutPage.robot
+Resource                                 ../Page_Object/ProductPage.robot
+Resource                                 ../Page_Object/CheckoutPage.robot
 
 
 Test setup                               Setup
